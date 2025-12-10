@@ -1,0 +1,279 @@
+/* Reset standaard marges en padding voor alle elementen */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* Stijl voor de eerste achtergrondsectie */
+.achtergrond1 {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(pexels-pixabay-268533.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Stijl voor de navigatiebalk */
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Stijl voor het logo in de navigatiebalk */
+nav img {
+    width: 150px;
+}
+
+/* Stijl voor de navigatiebalk items */
+.navigatiebar {
+    flex: 1;
+    text-align: right;
+}
+
+.navigatiebar ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+/* Stijl voor de links in de navigatiebalk */
+.navigatiebar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* Stijl voor de hover-effecten op de links in de navigatiebalk */
+.navigatiebar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navigatiebar ul li:hover::after {
+    width: 100%;
+}
+
+/* Stijl voor de home-sectie */
+.home {
+    position: absolute;
+    width: 100%;
+    top: 35%;
+    text-align: center;
+    color: #fff;
+}
+
+.home h1 {
+    font-size: 70px;
+    margin-top: 50px;
+}
+
+.home p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+/* Stijl voor de tweede achtergrondsectie */
+.achtergrond2 {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    height: 100vh;
+    padding-top: 100px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url(snowmountain.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Stijl voor de koptekst in de 'Over Mij' sectie */
+.overmij h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* Stijl voor de rijen in 4 secties */
+.row {
+    color: #fff;
+    margin-top: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Stijl voor de kolommen in de 'Over Mij' sectie */
+.row-col1 {
+    flex-basis: 31%;
+    background: rgb(96, 130, 197);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+/* Stijl voor de derde achtergrondsectie */
+.achtergrond3 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Stijl voor de video in de derde achtergrondsectie */
+.achtergrond3 video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+}
+
+/* Stijl voor de overlay in de derde achtergrondsectie */
+.achtergrond3 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+}
+
+/* Stijl voor de 'Mijn Werk' sectie */
+.mijnwerk {
+    position: relative;
+    z-index: 3;
+    color: #fff;
+}
+
+.mijnwerk h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 5%;
+}
+
+/* Stijl voor de kolommen in de 'Mijn Werk' sectie */
+.row-col2 {
+    flex-basis: 31%;
+    background: rgb(44, 123, 1);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+/* Stijl voor de vierde achtergrondsectie */
+.achtergrond4 {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    height: 100vh;
+    padding-top: 100px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url(camping.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Stijl voor de koptekst in de 'Technologieën/Vaardigheden' sectie */
+.technologieënvaardigheden h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* Stijl voor de kolommen in de 'Technologieën/Vaardigheden' sectie */
+.row-col3 {
+    flex-basis: 31%;
+    background: rgb(227, 163, 61);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+/* Stijl voor de vijfde achtergrondsectie */
+.achtergrond5 {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    height: 100vh;
+    padding-top: 100px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url(bridge.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Stijl voor de koptekst in de 'Side/toekomstige projecten' sectie */
+.sidetoekomstigeprojecten h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* Stijl voor de kolommen in de 'Side/toekomstige projecten' sectie */
+.row-col4 {
+    flex-basis: 31%;
+    background: rgb(193, 60, 50);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+/* Stijl voor de rijen in de 'Side/toekomstige projecten' sectie */
+.row1 {
+    color: #fff;
+    margin-top: 15%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Stijl voor de zesde achtergrondsectie */
+.achtergrond6 {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    height: 60vh;
+    padding-top: 100px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url(istockphoto-990697728-612x612.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Stijl voor de koptekst in de 'Contact' sectie */
+.contact h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* Stijl voor de tekst in de 'Contact' sectie */
+.contact {
+    color: #fff;
+}
+
+/* Stijl voor de link in de 'Contact' sectie */
+.link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.link p {
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #fff;
+}
